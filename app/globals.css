@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  /* FONTS */
+  --font-sans: var(--font-noto-sans);
+  --font-handwritten: var(--font-kalam);
   /* MAIN */
   --color-separator: #f7ebeb;
   --color-background: #fff9f8;

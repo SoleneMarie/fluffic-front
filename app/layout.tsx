@@ -1,17 +1,18 @@
 // Page pour écrire : layout global, providers, fonts, metadata, gérer le thème et les langues
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Kalam, Noto_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const notoSans = Noto_Sans({
   subsets: ["latin"],
+  variable: "--font-noto-sans",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const kalam = Kalam({
   subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-kalam",
 });
 
 export const metadata: Metadata = {
@@ -25,10 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="fr">
+      <body className={`${notoSans.variable} ${kalam.variable} antialiased`}>
         {children}
       </body>
     </html>
