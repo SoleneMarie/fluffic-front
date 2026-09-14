@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  /* MAIN */
+  --color-separator: #f7ebeb;
+  --color-background: #fff9f8;
+  /* PRIMARY */
+  --color-primary: #e2858b;
+  --color-primary-dark: #d8747c;
+  --color-primary-very-dark: #d26c73;
+  --color-primary-light: #e8c4c6;
+  --color-primary-very-light: #fceeef;
+  --color-primary-contrast: #ffffff;
+  /* SECONDARY */
+  --color-secondary: #784848;
+  --color-secondary-dark: #5b4545;
+  --color-secondary-very-dark: #524746;
+  --color-secondary-light: #c9b8ba;
+  --color-secondary-very-light: #e3d5d6;
+  /* TERTIARY */
+  --color-tertiary: #a68e8e;
+  --color-tertiary-dark: #93777d;
+  --color-tertiary-light: #d3c7c9;
+  /* QUATERNARY */
+  --color-quaternary: #c5a6cd;
+  --color-quaternary-shadow: #b1a2bf;
+  --color-quaternary-dark: #6b5878;
+  /* ALERT */
+  --color-alert: #d9534f;
+  --color-alert-dark: #c44445;
+  --color-alert-disabled: #eac8c9;
+  /* SUCCESS */
+  --color-success: #92c1b2;
+  /* COMPATIBILITY */
+  --color-compatibility: #e6818c;
+  /* PRO */
+  --color-pro-background: #ffffff;
+  --color-pro-primary: #6b5878;
+  --color-pro-primary-dark: #5b4867;
+  --color-pro-primary-light: #c5a6cd;
+  --color-pro-primary-very-light: #f7e5fc;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
