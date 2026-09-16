@@ -6,17 +6,18 @@ import FlufficTitle from "@/components/titles/FlufficTitle";
 const TitleExamples = () => {
   return (
     <div className="flex flex-col justify-content gap-4">
+      <SectionTitle>Titre de section</SectionTitle>
+      <MainTitle subtitle="Message à caractère informatif, c'est vraiment très intéressant">
+        Titre principal
+      </MainTitle>
       <MainTitle
-        titleText="Titre principal avec sous-titre"
-        subtitleText="Message à caractère informatif, c'est vraiment très intéressant"
-      />
-      <MainTitle
-        titleText="Titre principal avec icône"
-        subtitleText="Quel bel icone que voilà, le premier icône customisé de Fluffic"
-        icon={<HeartIcon className="w-6 md:w-8" />}
-      />
-      <MainTitle titleText="Titre principal sans sous-titre" />
-      <SectionTitle titleText="Titre de section" />
+        subtitle="Message à caractère informatif, c'est vraiment très intéressant"
+        icon={<HeartIcon className="w-6 md:w-8 text-primary" />}
+      >
+        Titre principal avec icône
+      </MainTitle>
+      <MainTitle>Titre principal sans sous-titre</MainTitle>
+
       <FlufficTitle />
       <FlufficTitle size="medium" />
       <FlufficTitle size="large" />

@@ -1,11 +1,13 @@
+import { ReactNode } from "react";
+
 type SectionTitleProps = {
-  titleText: string;
+  children: ReactNode;
 };
 
-const SectionTitle = ({ titleText }: SectionTitleProps) => {
+const SectionTitle = ({ children }: SectionTitleProps) => {
   return (
-    <h2 className="text-secondary-very-dark text-base md:text-lg font-semibold">
-      {titleText}
+    <h2 className="text-secondary-very-dark text-base md:text-xl font-semibold">
+      {children}
     </h2>
   );
 };

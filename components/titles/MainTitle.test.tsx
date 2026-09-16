@@ -3,7 +3,7 @@ import MainTitle from "./MainTitle";
 
 describe("MainTitle", () => {
   it("renders the title as an h1", () => {
-    render(<MainTitle titleText="Mes coups de cœur" />);
+    render(<MainTitle>Mes coups de cœur</MainTitle>);
 
     expect(
       screen.getByRole("heading", {
@@ -15,10 +15,9 @@ describe("MainTitle", () => {
 
   it("renders the subtitle when provided", () => {
     render(
-      <MainTitle
-        titleText="Mes coups de cœur"
-        subtitleText="Retrouvez ici tous vos favoris."
-      />,
+      <MainTitle subtitle="Retrouvez ici tous vos favoris.">
+        Mes coups de cœur
+      </MainTitle>,
     );
 
     expect(
@@ -28,10 +27,9 @@ describe("MainTitle", () => {
 
   it("renders the icon when provided", () => {
     render(
-      <MainTitle
-        titleText="Mes coups de cœur"
-        icon={<span data-testid="title-icon">♥</span>}
-      />,
+      <MainTitle icon={<span data-testid="title-icon">♥</span>}>
+        Mes coups de cœur
+      </MainTitle>,
     );
 
     expect(screen.getByTestId("title-icon")).toBeInTheDocument();

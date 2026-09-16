@@ -5,10 +5,9 @@ import StorybookTabs from "./components/StorybookTabs";
 const StorybookPage = () => {
   return (
     <PageContainer>
-      <MainTitle
-        titleText="Bibliothèque de composants 🐾"
-        subtitleText="Tous les composants réutilisables de l'application Fluffic sont réunis ici."
-      />
+      <MainTitle subtitle="Tous les composants réutilisables de l'application Fluffic sont réunis ici.">
+        Bibliothèque de composants 🐾
+      </MainTitle>
       <StorybookTabs />
     </PageContainer>
   );
