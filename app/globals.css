@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
-@theme {
+@theme inline {
   /* FONTS */
   --font-sans: var(--font-noto-sans);
   --font-handwritten: var(--font-kalam);
+  --font-logo: var(--font-long-cang);
+}
+
+@theme {
   /* MAIN */
   --color-separator: #f7ebeb;
   --color-background: #fff9f8;
@@ -45,5 +49,5 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }

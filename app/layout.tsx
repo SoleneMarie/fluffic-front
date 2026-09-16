@@ -1,7 +1,7 @@
 // Page pour écrire : layout global, providers, fonts, metadata, gérer le thème et les langues
 
 import type { Metadata } from "next";
-import { Kalam, Noto_Sans } from "next/font/google";
+import { Kalam, Noto_Sans, Long_Cang } from "next/font/google";
 import "./globals.css";
 
 const notoSans = Noto_Sans({
@@ -13,6 +13,12 @@ const kalam = Kalam({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-kalam",
+});
+
+const longCang = Long_Cang({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-long-cang",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${notoSans.variable} ${kalam.variable} antialiased`}>
+      <body className={`${notoSans.variable} ${kalam.variable} antialiased  ${longCang.variable} antialiased`} >
         {children}
       </body>
     </html>
