@@ -4,10 +4,12 @@ import { useState } from "react";
 import Tabs from "@/components/tabs/Tabs";
 import TitleExamples from "./TitleExamples";
 import ButtonExamples from "./ButtonsExamples";
+import TagsExamples from "./TagsExamples";
 
 const tabs = [
   { label: "Titres", value: "titles" },
   { label: "Boutons", value: "buttons" },
+  { label: "Badges", value: "tags" },
   //   { label: "Cartes", value: "cards" },
 ];
 
@@ -20,7 +22,7 @@ const StorybookTabs = () => {
         items={tabs}
         activeTab={activeTab}
         onChange={setActiveTab}
-        className="gap-6 select-none mt-4"
+        className="flex-wrap gap-6 select-none mt-4"
       />
 
       {activeTab === "titles" && (
@@ -32,6 +34,12 @@ const StorybookTabs = () => {
       {activeTab === "buttons" && (
         <section className="mt-8 select-none">
           <ButtonExamples />
+        </section>
+      )}
+
+      {activeTab === "tags" && (
+        <section className="mt-8 select-none">
+          <TagsExamples />
         </section>
       )}
 

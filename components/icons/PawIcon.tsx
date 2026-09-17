@@ -6,7 +6,7 @@ type PawIconProps = {
 const PawIcon = ({ strokeWidth = 4, className }: PawIconProps) => {
   return (
     <svg
-      className={className}
+      className={className || ""}
       viewBox="-5 -5 140 118"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

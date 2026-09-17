@@ -38,15 +38,14 @@ const FlufficButton = ({
 
   return (
     <button
+      {...rest}
       type="button"
       className={`
-        cursor-pointer disabled:cursor-not-allowed
         ${variantConfig[variant]}
         ${icon && withIconStyle}
         ${sizeStyles}
-        ${className ?? ""}
+        ${className || ""}
       `}
-      {...rest}
     >
       {icon}
       {children}

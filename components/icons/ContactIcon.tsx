@@ -6,7 +6,7 @@ type ContactIconProps = {
 const ContactIcon = ({ className, strokeWidth = 2 }: ContactIconProps) => {
   return (
     <svg
-      className={className}
+      className={className || ""}
       viewBox="0 0 23 22"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

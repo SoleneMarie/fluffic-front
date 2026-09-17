@@ -2,6 +2,7 @@ import FlufficButton from "@/components/buttons/FlufficButton";
 import SectionTitle from "@/components/titles/SectionTitle";
 import PawIcon from "@/components/icons/PawIcon";
 import ContactIcon from "@/components/icons/ContactIcon";
+import FavoriteButton from "@/components/buttons/FavoriteButton";
 
 const ButtonExamples = () => {
   return (
@@ -9,7 +10,7 @@ const ButtonExamples = () => {
       <SectionTitle>Boutons primaires</SectionTitle>
       <div className="flex flex-wrap gap-6 items-center">
         <FlufficButton>Créer mon profil</FlufficButton>
-        <FlufficButton icon={<ContactIcon />}>Créer mon profil</FlufficButton>
+        <FlufficButton icon={<ContactIcon />}>Contacter</FlufficButton>
         <FlufficButton disabled>Créer mon profil</FlufficButton>
       </div>
       <SectionTitle>Boutons secondaires</SectionTitle>
@@ -45,6 +46,13 @@ const ButtonExamples = () => {
         <FlufficButton size="large" icon={<PawIcon />}>
           Rencontrer les animaux
         </FlufficButton>
+      </div>
+      <div>
+        <SectionTitle className="mb-6">Boutons favoris</SectionTitle>
+        <div className="bg-success h-20 w-50 flex flex-wrap gap-6 justify-center items-center rounded-xl">
+          <FavoriteButton />
+          <FavoriteButton selected />
+        </div>
       </div>
     </section>
   );

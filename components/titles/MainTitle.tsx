@@ -4,11 +4,12 @@ type MainTitleProps = {
   children: ReactNode;
   subtitle?: string;
   icon?: ReactNode;
+  className?: string;
 };
 
-const MainTitle = ({ children, subtitle, icon }: MainTitleProps) => {
+const MainTitle = ({ children, subtitle, icon, className }: MainTitleProps) => {
   return (
-    <div>
+    <div className={className || ""}>
       <div className="flex items-baseline gap-2 md:gap-3">
         <h1 className="font-handwritten text-secondary text-[22px] -mb-1.5 md:text-3xl font-bold">
           {children}
