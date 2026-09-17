@@ -5,11 +5,13 @@ import Tabs from "@/components/tabs/Tabs";
 import TitleExamples from "./TitleExamples";
 import ButtonExamples from "./ButtonsExamples";
 import TagsExamples from "./TagsExamples";
+import IndicatorExamples from "./IndicatorExamples";
 
 const tabs = [
   { label: "Titres", value: "titles" },
   { label: "Boutons", value: "buttons" },
   { label: "Badges", value: "tags" },
+  { label: "Indicateurs", value: "indicators" },
   //   { label: "Cartes", value: "cards" },
 ];
 
@@ -40,6 +42,12 @@ const StorybookTabs = () => {
       {activeTab === "tags" && (
         <section className="mt-8 select-none">
           <TagsExamples />
+        </section>
+      )}
+
+      {activeTab === "indicators" && (
+        <section className="mt-8 select-none">
+          <IndicatorExamples />
         </section>
       )}
 
