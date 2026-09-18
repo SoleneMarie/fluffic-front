@@ -8,6 +8,7 @@
 }
 
 @theme {
+  --breakpoint-xs: 380px;
   /* MAIN */
   --color-separator: #f7ebeb;
   --color-background: #fff9f8;

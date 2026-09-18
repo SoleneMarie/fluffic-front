@@ -6,13 +6,14 @@ import TitleExamples from "./TitleExamples";
 import ButtonExamples from "./ButtonsExamples";
 import TagsExamples from "./TagsExamples";
 import IndicatorExamples from "./IndicatorExamples";
+import CardExamples from "./CardsExamples";
 
 const tabs = [
   { label: "Titres", value: "titles" },
   { label: "Boutons", value: "buttons" },
   { label: "Badges", value: "tags" },
   { label: "Indicateurs", value: "indicators" },
-  //   { label: "Cartes", value: "cards" },
+  { label: "Cartes", value: "cards" },
 ];
 
 const StorybookTabs = () => {
@@ -24,7 +25,7 @@ const StorybookTabs = () => {
         items={tabs}
         activeTab={activeTab}
         onChange={setActiveTab}
-        className="flex-wrap gap-6 select-none mt-4"
+        className="flex-wrap gap-x-6 gap-y-3 select-none mt-4"
       />
 
       {activeTab === "titles" && (
@@ -51,13 +52,11 @@ const StorybookTabs = () => {
         </section>
       )}
 
-      {/* 
       {activeTab === "cards" && (
-        <StorybookSection title="Cartes">
+        <section className="mt-8 select-none">
           <CardExamples />
-        </StorybookSection>
+        </section>
       )}
-      */}
     </>
   );
 };

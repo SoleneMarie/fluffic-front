@@ -14,8 +14,8 @@ const variantConfig = {
 };
 
 const sizeConfig = {
-  medium: "py-0.75 px-3 text-[11px]",
-  small: "py-0.25 px-2.5 text-[10px]",
+  medium: "py-0.75 sm:py-1 px-3 sm:px-4 text-[11px] sm:text-[13px]",
+  small: "py-0.25 py-0.5 px-2.5 sm:px-3 text-[10px] text-[11px]",
 };
 
 const ChipTag = ({

@@ -6,8 +6,8 @@ type ProgressBarProps = {
 };
 
 const sizeConfig = {
-  small: "h-3.25 rounded-sm",
-  medium: "h-4.5 rounded-md",
+  small: "h-3.25 sm:h-4 rounded-sm",
+  medium: "h-4.5 sm:h-5.25 rounded-md",
 };
 
 const colorConfig = {

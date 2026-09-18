@@ -10,28 +10,28 @@ const IndicatorExamples = () => {
       <div className="flex flex-wrap gap-6 items-center pb-4">
         <div className="flex flex-col justify-center items-center">
           <p className="text-xs mb-1 text-secondary-very-dark">65%</p>
-          <div className="w-38">
+          <div className="w-38 sm:w-44">
             <ProgressBar value={65} />
           </div>
         </div>
 
         <div className="flex flex-col justify-center items-center">
           <p className="text-xs mb-1 text-secondary-very-dark">80%</p>
-          <div className="w-38">
+          <div className="w-38 sm:w-44">
             <ProgressBar value={80} color="tertiary" />
           </div>
         </div>
 
         <div className="flex flex-col justify-center items-center">
           <p className="text-xs mb-1 text-secondary-very-dark">46%</p>
-          <div className="w-28">
+          <div className="w-28 sm:w-32">
             <ProgressBar value={46} size="small" />
           </div>
         </div>
 
         <div className="flex flex-col justify-center items-center">
           <p className="text-xs mb-1 text-secondary-very-dark">76%</p>
-          <div className="w-28">
+          <div className="w-28 sm:w-32">
             <ProgressBar value={76} color="quaternary" size="small" />
           </div>
         </div>
@@ -42,15 +42,15 @@ const IndicatorExamples = () => {
       <div className="flex flex-wrap gap-x-8 gap-y-4 items-center pb-4">
         <CompatibilityIndicator size="small" />
 
-        <div className="w-72">
+        <div className="w-72 sm:w-80">
           <CompatibilityIndicator value={60} />
         </div>
 
-        <div className="w-60">
+        <div className="w-60 sm:w-68">
           <CompatibilityIndicator value={60} size="small" />
         </div>
 
-        <div className="w-84">
+        <div className="w-84 sm:w-92">
           <CompatibilityIndicator />
         </div>
       </div>

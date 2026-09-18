@@ -16,10 +16,10 @@ const FavoriteButton = ({
       role="button"
       aria-label={selected ? "Retirer des favoris" : "Ajouter aux favoris"}
       aria-pressed={selected}
-      className={`h-10 w-10 z-10 rounded-full flex items-center justify-center ${selected ? "bg-primary-contrast" : "bg-primary-contrast/80"} ${className || ""} `}
+      className={`h-10 sm:h-12 w-10 sm:w-12 z-10 rounded-full flex items-center justify-center ${selected ? "bg-primary-contrast" : "bg-primary-contrast/80"} ${className || ""} `}
     >
       <HeartIcon
-        className={`w-7 mt-1 z-100 ${selected ? "text-compatibility" : " text-tertiary/80"}`}
+        className={`w-7 sm:w-8 mt-1 z-100 ${selected ? "text-compatibility" : " text-tertiary/80"}`}
         filled={selected}
         strokeWidth={1.5}
       />

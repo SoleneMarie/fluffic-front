@@ -19,9 +19,11 @@ const variantConfig = {
 };
 
 const sizeConfig = {
-  small: "px-3 py-1 text-[12px] rounded-[18px] [&>svg]:w-4 [&>svg]:-my-2",
-  medium: "px-5 py-3 text-[15px] rounded-[20px] [&>svg]:w-6 [&>svg]:-my-2",
-  large: `px-6 py-3 text-lg rounded-[24px] [&>svg]:w-10 [&>svg]:-my-2`,
+  small:
+    "px-3 py-1 text-[12px] sm:text-[14px] lg:text-base rounded-[18px] [&>svg]:w-4 [&>svg]:-my-2",
+  medium:
+    "px-5 py-3 text-[15px] sm:text-[16px] lg:text-lg rounded-[20px] [&>svg]:w-6 [&>svg]:-my-2",
+  large: `px-6 py-3 text-lg sm:text-[20px] lg:text-xl rounded-[24px] [&>svg]:w-10 [&>svg]:-my-2`,
 };
 
 const FlufficButton = ({
@@ -34,7 +36,9 @@ const FlufficButton = ({
 }: FlufficButtonProps) => {
   const withIconStyle = "flex items-center justify-center text-nowrap gap-3";
   const sizeStyles =
-    variant === "tertiary" ? "text-[12px] px-1" : sizeConfig[size];
+    variant === "tertiary"
+      ? "text-[12px] sm:text-[14px]  px-1"
+      : sizeConfig[size];
 
   return (
     <button
