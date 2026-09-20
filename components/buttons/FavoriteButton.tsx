@@ -2,11 +2,11 @@ import HeartIcon from "../icons/HeartIcon";
 import { ButtonHTMLAttributes } from "react";
 
 type FavoriteButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  selected?: boolean;
+  isFavorite?: boolean;
 };
 
 const FavoriteButton = ({
-  selected = false,
+  isFavorite = false,
   className,
   ...rest
 }: FavoriteButtonProps) => {
@@ -14,13 +14,13 @@ const FavoriteButton = ({
     <button
       {...rest}
       role="button"
-      aria-label={selected ? "Retirer des favoris" : "Ajouter aux favoris"}
-      aria-pressed={selected}
-      className={`h-10 sm:h-12 w-10 sm:w-12 z-10 rounded-full flex items-center justify-center ${selected ? "bg-primary-contrast" : "bg-primary-contrast/80"} ${className || ""} `}
+      aria-label={isFavorite ? "Retirer des favoris" : "Ajouter aux favoris"}
+      aria-pressed={isFavorite}
+      className={`h-10 sm:h-12 w-10 sm:w-12 z-10 rounded-full flex items-center justify-center ${isFavorite ? "bg-primary-contrast/80" : "bg-primary-contrast/60"} ${className || ""} `}
     >
       <HeartIcon
-        className={`w-7 sm:w-8 mt-1 z-100 ${selected ? "text-compatibility" : " text-tertiary/80"}`}
-        filled={selected}
+        className={`w-7 sm:w-8 mt-1 z-100 ${isFavorite ? "text-compatibility" : " text-tertiary/80"}`}
+        filled={isFavorite}
         strokeWidth={1.5}
       />
     </button>

@@ -7,12 +7,14 @@ import ButtonExamples from "./ButtonsExamples";
 import TagsExamples from "./TagsExamples";
 import IndicatorExamples from "./IndicatorExamples";
 import CardExamples from "./CardsExamples";
+import MediaExamples from "./MediaExamples";
 
 const tabs = [
   { label: "Titres", value: "titles" },
   { label: "Boutons", value: "buttons" },
   { label: "Badges", value: "tags" },
   { label: "Indicateurs", value: "indicators" },
+  { label: "Media", value: "media" },
   { label: "Cartes", value: "cards" },
 ];
 
@@ -49,6 +51,12 @@ const StorybookTabs = () => {
       {activeTab === "indicators" && (
         <section className="mt-8 select-none">
           <IndicatorExamples />
+        </section>
+      )}
+
+      {activeTab === "media" && (
+        <section className="mt-8 select-none">
+          <MediaExamples />
         </section>
       )}
 

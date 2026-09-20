@@ -11,7 +11,7 @@ describe("FavoriteButton", () => {
   });
 
   it("has an accessible label when selected", () => {
-    render(<FavoriteButton selected />);
+    render(<FavoriteButton isFavorite />);
 
     expect(
       screen.getByRole("button", { name: "Retirer des favoris" }),
@@ -23,7 +23,7 @@ describe("FavoriteButton", () => {
 
     expect(screen.getByRole("button")).toHaveAttribute("aria-pressed", "false");
 
-    rerender(<FavoriteButton selected />);
+    rerender(<FavoriteButton isFavorite />);
 
     expect(screen.getByRole("button")).toHaveAttribute("aria-pressed", "true");
   });
