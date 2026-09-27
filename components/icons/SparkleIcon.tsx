@@ -1,9 +1,6 @@
-type SparkleIconProps = {
-  strokeWidth?: number;
-  className?: string;
-};
+import { IconProps } from "./types";
 
-const SparkleIcon = ({ strokeWidth = 2, className }: SparkleIconProps) => {
+const SparkleIcon = ({ strokeWidth = 2, className }: IconProps) => {
   return (
     <svg
       className={className || ""}

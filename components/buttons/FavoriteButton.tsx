@@ -3,6 +3,7 @@ import { ButtonHTMLAttributes } from "react";
 
 type FavoriteButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   isFavorite?: boolean;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
 const FavoriteButton = ({

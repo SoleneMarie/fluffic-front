@@ -1,9 +1,6 @@
-type PawIconProps = {
-  strokeWidth?: number;
-  className?: string;
-};
+import { IconProps } from "./types";
 
-const PawIcon = ({ strokeWidth = 4, className }: PawIconProps) => {
+const PawIcon = ({ strokeWidth = 4, className }: IconProps) => {
   return (
     <svg
       className={className || ""}

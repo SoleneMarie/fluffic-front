@@ -1,10 +1,6 @@
-type HeartIconProps = {
-  strokeWidth?: number;
-  className?: string;
-  filled?: boolean;
-};
+import { IconProps } from "./types";
 
-const HeartIcon = ({ className, strokeWidth = 2, filled }: HeartIconProps) => {
+const HeartIcon = ({ className, strokeWidth = 2, filled }: IconProps) => {
   return (
     <svg
       className={className || ""}

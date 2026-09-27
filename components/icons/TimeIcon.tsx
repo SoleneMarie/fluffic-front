@@ -1,9 +1,6 @@
-type TimeIconProps = {
-  strokeWidth?: number;
-  className?: string;
-};
+import { IconProps } from "./types";
 
-const TimeIcon = ({ strokeWidth = 2, className }: TimeIconProps) => {
+const TimeIcon = ({ strokeWidth = 2, className }: IconProps) => {
   return (
     <svg
       className={className || ""}

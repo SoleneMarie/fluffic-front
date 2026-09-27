@@ -42,7 +42,11 @@ const PhotoCarousel = ({
     return null;
   }
 
-  const handleDotClick = (index: number) => {
+  const handleDotClick = (
+    event: React.MouseEvent<HTMLButtonElement>,
+    index: number,
+  ) => {
+    event.stopPropagation();
     emblaApi?.scrollTo(index);
   };
 
@@ -75,7 +79,7 @@ const PhotoCarousel = ({
             <DotButton
               key={index}
               isActive={index === currentIndex}
-              onClick={() => handleDotClick(index)}
+              onClick={(event) => handleDotClick(event, index)}
               ariaLabel={`Afficher la photo ${index + 1}`}
             />
           ))}

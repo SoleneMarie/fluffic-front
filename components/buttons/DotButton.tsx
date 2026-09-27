@@ -1,6 +1,6 @@
 type DotButtonProps = {
   isActive: boolean;
-  onClick: () => void;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
   ariaLabel: string;
 };
 

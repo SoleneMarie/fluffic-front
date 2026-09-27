@@ -39,10 +39,7 @@ const CompatibilityIndicator = ({
       ) : size === "medium" ? (
         <span className="text-nowrap text-[12px] sm:text-sm">
           Faites le{" "}
-          <Link
-            href={QUESTIONNAIRE_HREF}
-            className="font-bold hover:underline"
-          >
+          <Link href={QUESTIONNAIRE_HREF} className="font-bold hover:underline">
             questionnaire
           </Link>{" "}
           et découvrez vos matchs !

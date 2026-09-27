@@ -1,9 +1,6 @@
-type ContactIconProps = {
-  strokeWidth?: number;
-  className?: string;
-};
+import { IconProps } from "./types";
 
-const ContactIcon = ({ className, strokeWidth = 2 }: ContactIconProps) => {
+const ContactIcon = ({ className, strokeWidth = 2 }: IconProps) => {
   return (
     <svg
       className={className || ""}

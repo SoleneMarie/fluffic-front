@@ -16,6 +16,11 @@ const PhotoWithFavorite = ({
   onFavoriteClick,
   className,
 }: PhotoWithFavoriteProps) => {
+  const handleFavoriteClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
+    onFavoriteClick();
+  };
+
   return (
     <div
       className={`relative overflow-hidden rounded-[10px] h-full w-full ${className ?? ""}`}
@@ -24,7 +29,7 @@ const PhotoWithFavorite = ({
 
       <FavoriteButton
         isFavorite={isFavorite}
-        onClick={onFavoriteClick}
+        onClick={handleFavoriteClick}
         className="absolute top-2 right-2"
       />
     </div>
