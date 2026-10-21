@@ -8,7 +8,8 @@ import LoginCTACard from "@/components/cards/CTACards/LoginCTACard";
 import MatchCTACard from "@/components/cards/CTACards/MatchCTACard";
 
 import { Animal } from "@/types/animal";
-import AnimalCard from "@/components/cards/AnimalCards/AnimalCards";
+import AnimalCard from "@/components/cards/AnimalCards/AnimalCard";
+import AnimalCardSkeleton from "@/components/cards/AnimalCards/AnimalCardSkeleton";
 
 const mockAnimal: Animal = {
   id: "animal-1",
@@ -77,6 +78,7 @@ const CardExamples = () => {
           onFavoriteClick={() => handleFavorite(mockAnimal2.id)}
           onClick={() => handleClick(mockAnimal2.id)}
         />
+        <AnimalCardSkeleton size="small" />
       </div>
 
       <SectionTitle className="mb-2">Grandes cartes animal</SectionTitle>
@@ -95,6 +97,7 @@ const CardExamples = () => {
           onFavoriteClick={() => handleFavorite(mockAnimal2.id)}
           onClick={() => handleClick(mockAnimal2.id)}
         />
+        <AnimalCardSkeleton size="medium" />
       </div>
     </div>
   );

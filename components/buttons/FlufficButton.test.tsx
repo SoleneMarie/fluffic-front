@@ -55,4 +55,19 @@ describe("FlufficButton", () => {
 
     expect(screen.getByTestId("button-icon")).toBeInTheDocument();
   });
+
+  it("renders when loading is true : loading state, disabled, no icon", () => {
+    render(
+      <FlufficButton
+        icon={<svg data-testid="button-icon" aria-hidden="true" />}
+        isLoading
+      >
+        Contacter
+      </FlufficButton>,
+    );
+
+    expect(screen.queryByTestId("button-icon")).not.toBeInTheDocument();
+    expect(screen.getByTestId("button-spinner")).toBeInTheDocument();
+    expect(screen.getByRole("button")).toBeDisabled();
+  });
 });

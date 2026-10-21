@@ -13,12 +13,16 @@ const ButtonExamples = () => {
         <FlufficButton>Créer mon profil</FlufficButton>
         <FlufficButton icon={<ContactIcon />}>Contacter</FlufficButton>
         <FlufficButton disabled>Créer mon profil</FlufficButton>
+        <FlufficButton isLoading>Créer mon profil</FlufficButton>
       </div>
 
       <SectionTitle>Boutons secondaires</SectionTitle>
       <div className="flex flex-wrap gap-6 items-baseline">
         <FlufficButton variant="secondary">Connexion</FlufficButton>
         <FlufficButton variant="secondary" disabled>
+          Connexion
+        </FlufficButton>
+        <FlufficButton variant="secondary" isLoading>
           Connexion
         </FlufficButton>
         <FlufficButton variant="secondary" size="small">
@@ -57,8 +61,8 @@ const ButtonExamples = () => {
         <div>
           <SectionTitle className="mb-6">Boutons favoris</SectionTitle>
           <div className="bg-success h-20 w-50 flex flex-wrap gap-6 justify-center items-center rounded-xl">
-            <FavoriteButton />
-            <FavoriteButton isFavorite />
+            <FavoriteButton onClick={() => {}} />
+            <FavoriteButton isFavorite onClick={() => {}} />
           </div>
         </div>
         <div>

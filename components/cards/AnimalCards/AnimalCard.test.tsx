@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import AnimalCard from "./AnimalCards";
+import AnimalCard from "./AnimalCard";
 import { Animal } from "@/types/animal";
 
 jest.mock(
