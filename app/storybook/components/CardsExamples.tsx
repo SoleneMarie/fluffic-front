@@ -2,14 +2,13 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import SectionTitle from "@/components/titles/SectionTitle";
 
-import LoginCTACard from "@/components/cards/CTACards/LoginCTACard";
-import MatchCTACard from "@/components/cards/CTACards/MatchCTACard";
-
-import { Animal } from "@/types/animal";
 import AnimalCard from "@/components/cards/AnimalCards/AnimalCard";
 import AnimalCardSkeleton from "@/components/cards/AnimalCards/AnimalCardSkeleton";
+import LoginCTACard from "@/components/cards/CTACards/LoginCTACard";
+import MatchCTACard from "@/components/cards/CTACards/MatchCTACard";
+import SectionTitle from "@/components/titles/SectionTitle";
+import { Animal } from "@/types/animal";
 
 const mockAnimal: Animal = {
   id: "animal-1",

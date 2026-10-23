@@ -1,15 +1,18 @@
+import Link from "next/link";
+
 import PawIcon from "../icons/PawIcon";
 
 type FlufficTitleProps = {
   size?: "small" | "medium" | "large";
+  link?: string;
 };
 
 const sizeConfig = {
   small: {
     container: "flex items-baseline",
-    paw: "w-8 md:w-10",
+    paw: "w-12 md:w-15",
     strokeWidth: 6,
-    text: "-translate-y-0.5 text-[30px] md:text-4xl",
+    text: "-translate-y-0.5 text-4xl md:text-5xl",
   },
   medium: {
     container: "flex items-baseline justify-center",
@@ -25,10 +28,10 @@ const sizeConfig = {
   },
 };
 
-const FlufficTitle = ({ size = "small" }: FlufficTitleProps) => {
+const FlufficTitle = ({ size = "small", link }: FlufficTitleProps) => {
   const config = sizeConfig[size];
 
-  return (
+  const title = (
     <div className={`${config.container} text-primary`}>
       <PawIcon strokeWidth={config.strokeWidth} className={config.paw} />
 
@@ -37,6 +40,12 @@ const FlufficTitle = ({ size = "small" }: FlufficTitleProps) => {
       </span>
     </div>
   );
+
+  if (link) {
+    return <Link href={link}>{title}</Link>;
+  }
+
+  return title;
 };
 
 export default FlufficTitle;

@@ -1,7 +1,7 @@
-import MainTitle from "@/components/titles/MainTitle";
-import SectionTitle from "@/components/titles/SectionTitle";
 import HeartIcon from "@/components/icons/HeartIcon";
 import FlufficTitle from "@/components/titles/FlufficTitle";
+import MainTitle from "@/components/titles/MainTitle";
+import SectionTitle from "@/components/titles/SectionTitle";
 
 const TitleExamples = () => {
   return (

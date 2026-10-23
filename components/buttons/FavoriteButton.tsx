@@ -1,5 +1,6 @@
-import HeartIcon from "../icons/HeartIcon";
 import { ButtonHTMLAttributes } from "react";
+
+import HeartIcon from "../icons/HeartIcon";
 
 type FavoriteButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   isFavorite?: boolean;

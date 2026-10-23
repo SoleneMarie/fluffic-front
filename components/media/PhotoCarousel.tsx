@@ -1,9 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import PhotoWithFavorite from "./PhotoWithFavorite";
+import { useEffect, useState } from "react";
+
 import DotButton from "@/components/buttons/DotButton";
+
+import PhotoWithFavorite from "./PhotoWithFavorite";
 
 type PhotoCarouselProps = {
   photos: string[];

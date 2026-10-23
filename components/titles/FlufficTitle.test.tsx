@@ -14,4 +14,21 @@ describe("FlufficTitle", () => {
 
     expect(container.firstChild).toHaveClass("flex-col-reverse");
   });
+
+  describe("navigation", () => {
+    it("renders a link when a destination is provided", () => {
+      render(<FlufficTitle link="/" />);
+
+      expect(screen.getByRole("link", { name: /fluffic/i })).toHaveAttribute(
+        "href",
+        "/",
+      );
+    });
+
+    it("does not render a link when no destination is provided", () => {
+      render(<FlufficTitle />);
+
+      expect(screen.queryByRole("link")).not.toBeInTheDocument();
+    });
+  });
 });

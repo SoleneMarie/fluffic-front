@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+
 import CompatibilityIndicator from "./CompatibilityIndicator";
 
 describe("CompatibilityIndicator", () => {

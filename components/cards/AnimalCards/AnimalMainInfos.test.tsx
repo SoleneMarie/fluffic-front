@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+
 import AnimalMainInfos from "./AnimalMainInfos";
 import { AnimalMainInfosProps } from "./AnimalMainInfos";
 

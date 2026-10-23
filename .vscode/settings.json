@@ -1,7 +1,8 @@
 {
-  "css.customData": [
-    "./.vscode/tailwind.css-data.json"
-  ],
+  "css.customData": ["./.vscode/tailwind.css-data.json"],
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
 }

@@ -1,8 +1,9 @@
-import AnimalMainInfos from "./AnimalMainInfos";
-import PhotoCarousel from "@/components/media/PhotoCarousel";
-import { Animal } from "@/types/animal";
-import ChipTag from "@/components/tags/ChipTag";
 import CompatibilityIndicator from "@/components/indicators/CompatibilityIndicator";
+import PhotoCarousel from "@/components/media/PhotoCarousel";
+import ChipTag from "@/components/tags/ChipTag";
+import { Animal } from "@/types/animal";
+
+import AnimalMainInfos from "./AnimalMainInfos";
 
 type AnimalCardProps = {
   size: "small" | "medium";

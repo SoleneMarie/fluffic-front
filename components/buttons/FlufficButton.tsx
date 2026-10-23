@@ -1,4 +1,4 @@
-import { ReactNode, ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes,ReactNode } from "react";
 
 type FlufficButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;

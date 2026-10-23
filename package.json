@@ -17,7 +17,8 @@
     "embla-carousel-react": "^8.6.0",
     "next": "16.0.10",
     "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "react-dom": "19.2.1",
+    "zustand": "^5.0.15"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -31,6 +32,7 @@
     "baseline-browser-mapping": "^2.11.24",
     "eslint": "^9",
     "eslint-config-next": "16.0.10",
+    "eslint-plugin-simple-import-sort": "^14.0.0",
     "jest": "^30.5.1",
     "jest-environment-jsdom": "^30.5.1",
     "tailwindcss": "^4",

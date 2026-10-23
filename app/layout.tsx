@@ -1,8 +1,9 @@
 // Page pour écrire : layout global, providers, fonts, metadata, gérer le thème et les langues
 
-import type { Metadata } from "next";
-import { Kalam, Noto_Sans, Long_Cang } from "next/font/google";
 import "./globals.css";
+
+import type { Metadata } from "next";
+import { Kalam, Long_Cang,Noto_Sans } from "next/font/google";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],

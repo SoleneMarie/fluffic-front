@@ -1,6 +1,6 @@
-import SectionTitle from "@/components/titles/SectionTitle";
-import ProgressBar from "@/components/indicators/ProgressBar";
 import CompatibilityIndicator from "@/components/indicators/CompatibilityIndicator";
+import ProgressBar from "@/components/indicators/ProgressBar";
+import SectionTitle from "@/components/titles/SectionTitle";
 
 const IndicatorExamples = () => {
   return (

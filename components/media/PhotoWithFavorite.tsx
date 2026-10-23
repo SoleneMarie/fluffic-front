@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import FavoriteButton from "@/components/buttons/FavoriteButton";
 
 type PhotoWithFavoriteProps = {

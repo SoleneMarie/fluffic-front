@@ -1,4 +1,5 @@
-import { render, screen, fireEvent, within } from "@testing-library/react";
+import { fireEvent, render, screen, within } from "@testing-library/react";
+
 import PhotoCarousel from "./PhotoCarousel";
 
 const mockScrollTo = jest.fn();

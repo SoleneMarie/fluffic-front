@@ -1,9 +1,9 @@
-import FlufficButton from "@/components/buttons/FlufficButton";
-import SectionTitle from "@/components/titles/SectionTitle";
-import PawIcon from "@/components/icons/PawIcon";
-import ContactIcon from "@/components/icons/ContactIcon";
-import FavoriteButton from "@/components/buttons/FavoriteButton";
 import DotButton from "@/components/buttons/DotButton";
+import FavoriteButton from "@/components/buttons/FavoriteButton";
+import FlufficButton from "@/components/buttons/FlufficButton";
+import ContactIcon from "@/components/icons/ContactIcon";
+import PawIcon from "@/components/icons/PawIcon";
+import SectionTitle from "@/components/titles/SectionTitle";
 
 const ButtonExamples = () => {
   return (

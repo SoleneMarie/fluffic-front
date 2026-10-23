@@ -1,6 +1,7 @@
+import Link from "next/link";
+
 import SparkleIcon from "@/components/icons/SparkleIcon";
 import ProgressBar from "@/components/indicators/ProgressBar";
-import Link from "next/link";
 
 type CompatibilityIndicatorProps = {
   value?: number;

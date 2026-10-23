@@ -52,6 +52,7 @@
 body {
   font-family: var(--font-sans);
   color: var(--color-secondary-very-dark);
+  background-color: var(--color-background);
 }
 
 button {

@@ -1,6 +1,6 @@
 import CTACard from "@/components/cards/CTACards/CTACard";
-import HeartIcon from "@/components/icons/HeartIcon";
 import LoginCTAFooter from "@/components/cards/CTACards/LoginCTAFooter";
+import HeartIcon from "@/components/icons/HeartIcon";
 
 type LoginCTACardProps = {
   onLogin: () => void;

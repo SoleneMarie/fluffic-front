@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import SectionTitle from "@/components/titles/SectionTitle";
-import PhotoWithFavorite from "@/components/media/PhotoWithFavorite";
+
 import PhotoCarousel from "@/components/media/PhotoCarousel";
+import PhotoWithFavorite from "@/components/media/PhotoWithFavorite";
+import SectionTitle from "@/components/titles/SectionTitle";
 
 const mockAnimal = {
   id: "animal-1",

@@ -1,5 +1,6 @@
 import FemaleIcon from "@/components/icons/FemaleIcon";
 import MaleIcon from "@/components/icons/MaleIcon";
+
 import PinCity from "../components/PinCity";
 
 export type AnimalMainInfosProps = {
