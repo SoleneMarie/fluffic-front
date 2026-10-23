@@ -38,8 +38,8 @@ const ProfileButton = ({ userId, username, avatarUrl }: ProfileButtonProps) => {
       >
         {!userId ? (
           <UserIcon
-            className="relative h-6 w-6 text-tertiary-dark"
-            strokeWidth={2.5}
+            className="relative h-7 w-7 mb-1.5 mr-0.5 text-tertiary-dark"
+            strokeWidth={2}
           />
         ) : avatarUrl ? (
           <Image

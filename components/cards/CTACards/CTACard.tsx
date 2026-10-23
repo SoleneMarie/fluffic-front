@@ -46,9 +46,9 @@ const CTACard = ({
           {footer ? (
             footer
           ) : (
-            <p className="flex justify-center items-center gap-1 text-tertiary">
+            <p className="flex justify-center items-center gap-1 @sm:gap-2 text-tertiary">
               <TimeIcon
-                className="w-5 @xs:w-6 @sm:w-7 @md:w-8"
+                className="w-6 @xs:w-7 @sm:w-8 @md:w-9 @xs:mb-0.5 -mr-1"
                 strokeWidth={1.5}
               />
 

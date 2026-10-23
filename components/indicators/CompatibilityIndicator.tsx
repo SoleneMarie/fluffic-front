@@ -22,7 +22,7 @@ const CompatibilityIndicator = ({
     <div
       className={`flex items-center text-compatibility gap-2 ${className ?? ""}`}
     >
-      <SparkleIcon className={"w-5 sm:w-6 mb-0.5"} strokeWidth={1} />
+      <SparkleIcon className={"w-6 sm:w-7 mb-0.5 -mr-1"} strokeWidth={1} />
 
       {hasCompatibility ? (
         <>

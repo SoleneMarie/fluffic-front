@@ -26,7 +26,11 @@ const AppLayout = ({ children, user }: AppLayoutProps) => {
         onMenuClick={handleSideMenu}
         isMenuOpen={sideMenuOpen}
       />
-      <SideMenu isOpen={sideMenuOpen} onClose={handleSideMenu} />
+      <SideMenu
+        isOpen={sideMenuOpen}
+        onClose={handleSideMenu}
+        userId={user?.id}
+      />
       <main>{children}</main>
     </>
   );

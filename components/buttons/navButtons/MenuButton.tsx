@@ -15,7 +15,7 @@ const MenuButton = ({ onClick, isOpen = false }: MenuButtonProps) => {
     >
       <div className="flex items-center gap-2">
         <MenuIcon
-          className={`h-6 w-6 ${
+          className={`h-6 w-6 mb-0.5 ${
             isOpen ? "text-primary" : "text-tertiary-dark"
           }`}
         />

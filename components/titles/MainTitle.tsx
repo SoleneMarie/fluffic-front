@@ -10,12 +10,12 @@ type MainTitleProps = {
 const MainTitle = ({ children, subtitle, icon, className }: MainTitleProps) => {
   return (
     <div className={className || ""}>
-      <div className="flex items-baseline gap-2 md:gap-3">
+      <div className="flex items-center gap-2 md:gap-3">
         <h1 className="font-handwritten text-secondary text-[22px] -mb-1.5 md:text-3xl font-bold">
           {children}
         </h1>
 
-        {icon && <span className="relative top-0.5 inline-flex">{icon}</span>}
+        {icon && <span className="-mt-1">{icon}</span>}
       </div>
 
       {subtitle && (
