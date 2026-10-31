@@ -19,7 +19,7 @@ const ProfileButton = ({ userId, username, avatarUrl }: ProfileButtonProps) => {
 
   const handleClick = () => {
     if (!userId) {
-      router.push("/login");
+      router.push("/login?mode=login");
       return;
     }
 

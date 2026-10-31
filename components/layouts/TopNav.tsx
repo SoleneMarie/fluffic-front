@@ -19,7 +19,7 @@ const TopNav = ({ user, onMenuClick, isMenuOpen = false }: TopNavProps) => {
     (user?.favorites.pets.length ?? 0) + (user?.favorites.shelters.length ?? 0);
 
   return (
-    <div className="w-full flex justify-between items-center">
+    <div className="w-full flex justify-between items-center  border-separator border-b pb-2 mb-6">
       <FlufficTitle link="/" />
       <nav className="flex gap-5 md:gap-8 items-center mt-2 md:mt-3">
         <ProfileButton

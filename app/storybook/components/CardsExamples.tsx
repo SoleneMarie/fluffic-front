@@ -57,8 +57,8 @@ const CardExamples = () => {
       <div className="flex flex-col md:flex-row gap-6 items-center pb-4">
         <MatchCTACard onClick={() => router.push("/matches")} />
         <LoginCTACard
-          onLogin={() => router.push("/login")}
-          onCreateAccount={() => router.push("/register")}
+          onLogin={() => router.push("/login?mode=login")}
+          onCreateAccount={() => router.push("/login?mode=signup")}
         />
       </div>
       <SectionTitle className="mb-2">Petites cartes animal</SectionTitle>

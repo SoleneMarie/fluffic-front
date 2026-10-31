@@ -35,14 +35,14 @@ const AnimalCardSkeleton = ({
         {size === "medium" && (
           <>
             {/* Tags */}
-            <div className="flex gap-1.5 mt-2" data-testId="tags">
+            <div className="flex gap-1.5 mt-2" data-testid="tags">
               <div className="h-6 w-16 rounded-full bg-gray-200 animate-pulse" />
               <div className="h-6 w-20 rounded-full bg-gray-200 animate-pulse" />
               <div className="h-6 w-14 rounded-full bg-gray-200 animate-pulse" />
             </div>
 
             {/* Compatibilité */}
-            <div className="mt-auto pt-2.5 mb-1" data-testId="compatibility">
+            <div className="mt-auto pt-2.5 mb-1" data-testid="compatibility">
               <div className="h-4 w-1/2 rounded bg-gray-200 animate-pulse" />
               <div className="h-2 w-full rounded-full bg-gray-200 animate-pulse mt-2" />
             </div>

@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes,ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
 type FlufficButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
@@ -10,12 +10,12 @@ type FlufficButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 const variantConfig = {
   primary:
-    "font-semibold bg-primary text-primary-contrast hover:bg-primary-very-dark",
+    "font-semibold bg-primary text-primary-contrast enabled:hover:bg-primary-very-dark",
   secondary:
-    "font-semibold border border-primary bg-primary-contrast text-primary hover:bg-primary-very-light/60 hover:border-primary-dark",
-  tertiary: "bg-transparent text-tertiary/80 hover:text-tertiary-dark",
+    "font-semibold border border-primary bg-primary-contrast text-primary enabled:hover:bg-primary-very-light/60 enabled:hover:border-primary-dark",
+  tertiary: "bg-transparent text-tertiary/80 enabled:hover:text-tertiary-dark",
   alert:
-    "font-semibold border border-alert bg-primary-contrast text-alert hover:border-alert-dark hover:text-alert-dark",
+    "font-semibold border border-alert bg-primary-contrast text-alert enabled:hover:border-alert-dark enabled:hover:text-alert-dark",
 };
 
 const sizeConfig = {
