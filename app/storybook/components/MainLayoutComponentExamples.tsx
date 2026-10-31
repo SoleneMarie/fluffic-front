@@ -1,7 +1,7 @@
-import AppLayout from "@/components/layouts/AppLayout";
+import AppLayout from "@/components/layouts/MainLayoutComponent";
 import { mockUser } from "@/mocks/mockUser";
 
-const LayoutExample = () => {
+const MainLayoutComponentExamples = () => {
   return (
     <AppLayout user={mockUser}>
       <div className="my-4 flex h-100 items-center justify-center rounded-lg border border-gray-300 bg-gray-100">
@@ -11,4 +11,4 @@ const LayoutExample = () => {
   );
 };
 
-export default LayoutExample;
+export default MainLayoutComponentExamples;

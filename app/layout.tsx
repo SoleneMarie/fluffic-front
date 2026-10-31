@@ -1,9 +1,11 @@
-// Page pour écrire : layout global, providers, fonts, metadata, gérer le thème et les langues
-
+// Layout global, providers, fonts, metadata, gérer le thème et les langues
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Kalam, Long_Cang,Noto_Sans } from "next/font/google";
+import { Kalam, Long_Cang, Noto_Sans } from "next/font/google";
+
+import PageContainer from "@/components/containers/PageContainer";
+import Footer from "@/components/layouts/Footer";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
@@ -34,8 +36,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${notoSans.variable} ${kalam.variable} antialiased  ${longCang.variable} antialiased`} >
-        {children}
+      <body
+        className={`${notoSans.variable} ${kalam.variable} antialiased  ${longCang.variable} antialiased`}
+      >
+        <PageContainer>
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </PageContainer>
       </body>
     </html>
   );

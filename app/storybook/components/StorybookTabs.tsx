@@ -7,7 +7,7 @@ import Tabs from "@/components/tabs/Tabs";
 import ButtonExamples from "./ButtonsExamples";
 import CardExamples from "./CardsExamples";
 import IndicatorExamples from "./IndicatorExamples";
-import LayoutExample from "./LayoutExamples";
+import MainLayoutComponentExamples from "./MainLayoutComponentExamples";
 import MediaExamples from "./MediaExamples";
 import TagsExamples from "./TagsExamples";
 import TitleExamples from "./TitleExamples";
@@ -72,7 +72,7 @@ const StorybookTabs = () => {
 
       {activeTab === "layout" && (
         <section className="mt-8 select-none">
-          <LayoutExample />
+          <MainLayoutComponentExamples />
         </section>
       )}
     </>

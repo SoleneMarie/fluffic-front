@@ -7,12 +7,12 @@ import type { TUser } from "@/types/user";
 import SideMenu from "./SideMenu";
 import TopNav from "./TopNav";
 
-type AppLayoutProps = {
+type MainLayoutComponentProps = {
   children: React.ReactNode;
   user?: TUser;
 };
 
-const AppLayout = ({ children, user }: AppLayoutProps) => {
+const MainLayoutComponent = ({ children, user }: MainLayoutComponentProps) => {
   const [sideMenuOpen, setSideMenuOpen] = useState<boolean>(false);
 
   const handleSideMenu = (): void => {
@@ -36,4 +36,4 @@ const AppLayout = ({ children, user }: AppLayoutProps) => {
   );
 };
 
-export default AppLayout;
+export default MainLayoutComponent;

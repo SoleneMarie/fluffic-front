@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 
 import type { TUser } from "@/types/user";
 
-import AppLayout from "./AppLayout";
+import AppLayout from "./MainLayoutComponent";
 
 jest.mock("./TopNav", () => {
   return function MockTopNav({

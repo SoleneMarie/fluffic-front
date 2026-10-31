@@ -3,15 +3,13 @@ import { render, screen } from "@testing-library/react";
 import PageContainer from "./PageContainer";
 
 describe("PageContainer", () => {
-  it("renders its content inside the main element", () => {
+  it("renders its content", () => {
     render(
       <PageContainer>
         <p>Contenu de la page</p>
       </PageContainer>,
     );
 
-    const main = screen.getByRole("main");
-
-    expect(main).toContainElement(screen.getByText("Contenu de la page"));
+    expect(screen.getByText("Contenu de la page")).toBeInTheDocument();
   });
 });
