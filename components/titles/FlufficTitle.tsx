@@ -24,7 +24,7 @@ const sizeConfig = {
     container: "flex flex-col-reverse items-center",
     paw: "w-36 md:w-44",
     strokeWidth: 3,
-    text: "-my-8 text-[84px] md:text-[100px]",
+    text: "-my-10 text-[84px] md:text-[100px]",
   },
 };
 

@@ -71,4 +71,14 @@ describe("FlufficButton", () => {
     expect(screen.getByTestId("button-spinner")).toBeInTheDocument();
     expect(screen.getByRole("button")).toBeDisabled();
   });
+
+  it("displays a next link when href is provided", () => {
+    render(
+      <FlufficButton href="/animals">Rencontrer les animaux</FlufficButton>,
+    );
+
+    expect(
+      screen.getByRole("link", { name: "Rencontrer les animaux" }),
+    ).toBeInTheDocument();
+  });
 });

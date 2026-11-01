@@ -1,4 +1,4 @@
-import FlufficLink from "../buttons/navButtons/FlufficLink";
+import FlufficButton from "../buttons/FlufficButton";
 import PawIcon from "../icons/PawIcon";
 
 type TFooterNavItem = {
@@ -16,7 +16,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="flex flex-col sm:flex-row items-center w-full justify-between gap-2 pt-4 mt-6 border-separator border-t">
+    <div className="flex flex-col sm:flex-row items-center w-full justify-between gap-2 pt-4 mt-6 border-separator border-t select-none">
       <div className="hidden sm:flex w-60 items-center text-primary font-semibold">
         <PawIcon
           strokeWidth={6}
@@ -31,9 +31,13 @@ const Footer = () => {
         className="flex w-full justify-evenly max-w-100"
       >
         {footerNavItems.map((item) => (
-          <FlufficLink key={item.label} href={item.redirection}>
+          <FlufficButton
+            variant="tertiary"
+            key={item.label}
+            href={item.redirection}
+          >
             {item.label}
-          </FlufficLink>
+          </FlufficButton>
         ))}
       </nav>
       <div className="flex items-center text-primary font-semibold sm:hidden">

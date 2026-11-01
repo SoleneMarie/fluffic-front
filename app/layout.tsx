@@ -40,7 +40,7 @@ export default function RootLayout({
         className={`${notoSans.variable} ${kalam.variable} antialiased  ${longCang.variable} antialiased`}
       >
         <PageContainer>
-          <main className="flex-1">{children}</main>
+          <main className="flex flex-1 flex-col">{children}</main>
           <Footer />
         </PageContainer>
       </body>

@@ -41,7 +41,7 @@ describe("ProfileButton", () => {
 
       fireEvent.click(screen.getByRole("button", { name: "profile-button" }));
 
-      expect(mockPush).toHaveBeenCalledWith("/login");
+      expect(mockPush).toHaveBeenCalledWith("/login?mode=login");
     });
   });
 
